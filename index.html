@@ -1,0 +1,104 @@
+<html>
+<head>
+    <script src="js/aframe.min.js"></script>
+<!-- include aframe-ar.js -->
+<script src="js/aframe-ar.js"></script>  
+<!-- <script src="js/test.js"> -->
+   
+<title>Attendance App</title>
+
+        
+        <style type="text/css">
+	
+#arjsDebugUIContainer 
+{
+   display: none; !important;
+}
+	
+.a-enter-vr-button
+{
+   display: none; !important;		
+}
+</style>
+        
+</head>
+
+    
+    
+    
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+        
+       
+        
+       
+        
+       <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/ZiadPh/Zee/master/Patts/pattern-A%20copy.patt'>
+		  
+          
+           
+          
+           <a-image id="img2" position="0 0.2 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Painting-A.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry="">
+           //add this to animate an image
+           </a-image>
+           
+           <a-image id="img3" position="0 0.6 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Frame-A.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+		
+
+           
+      </a-marker> 
+        
+               <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/ZiadPh/Zee/master/Patts/pattern-B.patt'>
+		  
+          
+           
+          
+           <a-image id="img2" position="0 0.2 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Painting-B.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry="">
+           
+           </a-image>
+           
+           <a-image id="img3" position="0 0.6 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Frame-B.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+		
+
+           
+      </a-marker>
+        
+      
+               <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/ZiadPh/Zee/master/Patts/pattern-C.patt'>
+		  
+          
+           
+          
+           <a-image id="img2" position="0 0.2 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Painting-C.jpg" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry="">
+        
+           </a-image>
+           
+        
+
+           
+      </a-marker>
+        
+        
+               <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/ZiadPh/Zee/master/Patts/pattern-D.patt'>
+		  
+          
+           
+          
+           <a-image id="img2" position="0 0.2 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Painting-D.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry="">
+           
+           </a-image>
+           
+           <a-image id="img3" position="0 0.6 0" rotation="270 0 0" width="" height="" opacity="1" src="https://github.com/ZiadPh/Zee/raw/master/images/Frame-D.png" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
+		
+
+           
+      </a-marker>
+     
+		<a-camera-static/>
+	</a-scene>
+</body>
+
+    
+    
+    
+</html>
